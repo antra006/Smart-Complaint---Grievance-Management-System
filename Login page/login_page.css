@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f7;
+    min-height: 100vh;
+}
+
+
+/* MAIN CONTAINER */
+
+.login-container {
+    width: 900px;
+    min-height: 550px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* LEFT / WELCOME SECTION */
+
+.welcome-section {
+    width: 50%;
+
+    background-color: #243b64;
+
+    color: white;
+
+    padding: 60px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.logo {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid white;
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-bottom: 35px;
+}
+
+
+.welcome-section h1 {
+    font-size: 35px;
+    line-height: 1.25;
+
+    margin-bottom: 25px;
+}
+
+
+.welcome-section p {
+    font-size: 16px;
+    line-height: 1.7;
+
+    max-width: 330px;
+
+    opacity: 0.9;
+}
+
+
+/* RIGHT / LOGIN SECTION */
+
+.login-section {
+    width: 50%;
+
+    padding: 55px 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.login-box {
+    width: 100%;
+}
+
+
+.login-box h2 {
+    font-size: 30px;
+
+    color: #222;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+}
+
+
+/* INPUTS */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+
+.input-group label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 8px;
+}
+
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d8dce3;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+.input-group input:focus {
+    border-color: #243b64;
+
+    box-shadow: 0 0 0 3px rgba(36, 59, 100, 0.08);
+}
+
+
+/* LOGIN OPTIONS */
+
+.login-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 5px 0 25px;
+}
+
+
+.remember {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 13px;
+
+    color: #555;
+}
+
+
+.remember input {
+    accent-color: #243b64;
+}
+
+
+.login-options a {
+    text-decoration: none;
+
+    color: #243b64;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* LOGIN BUTTON */
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #243b64;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+    background-color: #1b2f52;
+
+    transform: translateY(-1px);
+}
+
+
+/* SUPPORT TEXT */
+
+.help-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    color: #888;
+}
+
+
+.help-text a {
+    color: #243b64;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .login-container {
+        width: 90%;
+
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        transform: none;
+
+        margin: 40px auto;
+
+        flex-direction: column;
+    }
+
+
+    .welcome-section,
+    .login-section {
+        width: 100%;
+    }
+
+
+    .welcome-section {
+        padding: 40px;
+    }
+
+
+    .login-section {
+        padding: 40px;
+    }
+
+
+    .welcome-section h1 {
+        font-size: 28px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .login-container {
+        width: 94%;
+    }
+
+
+    .welcome-section,
+    .login-section {
+        padding: 30px;
+    }
+
+
+    .login-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}
