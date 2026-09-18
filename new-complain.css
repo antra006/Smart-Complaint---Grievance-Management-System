@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 70px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 6%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    color: #243b64;
+    font-weight: 600;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+
+    background-color: #243b64;
+    color: white;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav-links {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #555;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #243b64;
+}
+
+.nav-links .active {
+    color: #243b64;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.complaint-container {
+    width: 82%;
+    max-width: 1100px;
+
+    margin: 45px auto;
+}
+
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+.page-heading {
+    margin-bottom: 35px;
+}
+
+.page-label {
+    font-size: 12px;
+
+    color: #243b64;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+.page-heading h1 {
+    font-size: 34px;
+
+    color: #202b3c;
+
+    margin: 10px 0;
+}
+
+.page-heading p {
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.complaint-form {
+    background-color: white;
+
+    border-radius: 16px;
+
+    padding: 40px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid #edf0f5;
+}
+
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+    padding-bottom: 35px;
+
+    margin-bottom: 35px;
+
+    border-bottom: 1px solid #edf0f5;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    display: flex;
+
+    gap: 16px;
+
+    align-items: flex-start;
+
+    margin-bottom: 28px;
+}
+
+.section-number {
+    color: #243b64;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding-top: 3px;
+}
+
+.section-heading h2 {
+    font-size: 20px;
+
+    color: #243b64;
+
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px 25px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 8px;
+}
+
+.form-group label span {
+    color: #c0392b;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #333;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #243b64;
+
+    box-shadow: 0 0 0 3px rgba(36, 59, 100, 0.08);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group small {
+    margin-top: 7px;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FULL WIDTH
+========================= */
+
+.full-width {
+    margin-top: 22px;
+}
+
+
+/* =========================
+   DECLARATION
+========================= */
+
+.declaration {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background-color: #f7f9fc;
+
+    border-radius: 8px;
+}
+
+.declaration label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+.declaration input {
+    margin-top: 3px;
+
+    accent-color: #243b64;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.form-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    padding-top: 10px;
+}
+
+.form-actions button {
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.clear-btn {
+    background-color: white;
+
+    border: 1px solid #ccd2dc;
+
+    color: #555;
+}
+
+.clear-btn:hover {
+    background-color: #f5f6f8;
+}
+
+.submit-btn {
+    background-color: #243b64;
+
+    border: 1px solid #243b64;
+
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #1b2f52;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        margin-left: 0;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+    }
+
+    .complaint-container {
+        width: 92%;
+    }
+
+    .complaint-form {
+        padding: 25px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 28px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .brand span {
+        font-size: 14px;
+    }
+
+    .complaint-form {
+        padding: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Complaint | SGMS</title>
+
+    <link rel="stylesheet" href="./new-complain.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="brand">
+            <div class="logo">SGMS</div>
+
+            <span>
+                Smart Grievance Management System
+            </span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="./dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="./new-complain.html" class="active">
+                New Complaint
+            </a>
+
+            <a href="./index.html">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="complaint-container">
+
+        <!-- PAGE HEADING -->
+
+        <div class="page-heading">
+
+            <span class="page-label">
+                GRIEVANCE PORTAL
+            </span>
+
+            <h1>Register a New Complaint</h1>
+
+            <p>
+                Please provide accurate information about your
+                complaint so that it can be reviewed appropriately.
+            </p>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <form class="complaint-form">
+
+
+            <!-- SECTION 1 -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">01</span>
+
+                    <div>
+                        <h2>Personal Information</h2>
+
+                        <p>
+                            Enter your basic information.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="id">
+                            Student / Employee ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="id"
+                            placeholder="Enter your ID"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2 -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">02</span>
+
+                    <div>
+                        <h2>Complaint Information</h2>
+
+                        <p>
+                            Select the category and provide details
+                            about your grievance.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <!-- CATEGORY -->
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Complaint Category <span>*</span>
+                        </label>
+
+                        <select id="category" required>
+
+                            <option value="">
+                                Select complaint category
+                            </option>
+
+                            <option>Academic</option>
+                            <option>Hostel</option>
+                            <option>Infrastructure</option>
+                            <option>Transport</option>
+                            <option>Technical</option>
+                            <option>Cleanliness</option>
+                            <option>Security</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SUB CATEGORY -->
+
+                    <div class="form-group">
+
+                        <label for="subcategory">
+                            Sub-Category <span>*</span>
+                        </label>
+
+                        <select id="subcategory" required>
+
+                            <option value="">
+                                Select sub-category
+                            </option>
+
+                            <option>Faculty Related</option>
+                            <option>Classroom</option>
+                            <option>Examination</option>
+                            <option>Hostel Facilities</option>
+                            <option>Maintenance</option>
+                            <option>Internet / Network</option>
+                            <option>Transportation</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Complaint Location <span>*</span>
+                        </label>
+
+                        <select id="location" required>
+
+                            <option value="">
+                                Select location
+                            </option>
+
+                            <option>Academic Block</option>
+                            <option>Hostel</option>
+                            <option>Library</option>
+                            <option>Laboratory</option>
+                            <option>Cafeteria</option>
+                            <option>Sports Area</option>
+                            <option>Campus</option>
+                            <option>Transport</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PRIORITY -->
+
+                    <div class="form-group">
+
+                        <label for="priority">
+                            Priority <span>*</span>
+                        </label>
+
+                        <select id="priority" required>
+
+                            <option value="">
+                                Select priority
+                            </option>
+
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                            <option>Urgent</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBJECT -->
+
+                <div class="form-group full-width">
+
+                    <label for="subject">
+                        Complaint Subject <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="Enter a short subject for your complaint"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group full-width">
+
+                    <label for="description">
+                        Complaint Description <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="6"
+                        placeholder="Describe your complaint in detail..."
+                        required
+                    ></textarea>
+
+                    <small>
+                        Please provide clear and relevant information.
+                    </small>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 3 -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">03</span>
+
+                    <div>
+                        <h2>Additional Information</h2>
+
+                        <p>
+                            Add any additional details related to
+                            your complaint.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- DATE -->
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Date of Incident
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                        >
+
+                    </div>
+
+
+                    <!-- PREFERRED RESOLUTION -->
+
+                    <div class="form-group">
+
+                        <label for="resolution">
+                            Preferred Resolution
+                        </label>
+
+                        <select id="resolution">
+
+                            <option value="">
+                                Select preferred resolution
+                            </option>
+
+                            <option>
+                                Immediate Action
+                            </option>
+
+                            <option>
+                                Investigation
+                            </option>
+
+                            <option>
+                                Repair / Maintenance
+                            </option>
+
+                            <option>
+                                Information / Clarification
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ADDITIONAL MESSAGE -->
+
+                <div class="form-group full-width">
+
+                    <label for="additional">
+                        Additional Information
+                    </label>
+
+                    <textarea
+                        id="additional"
+                        rows="4"
+                        placeholder="Enter any additional information..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- DECLARATION -->
+
+                <div class="declaration">
+
+                    <label>
+
+                        <input type="checkbox" required>
+
+                        <span>
+                            I confirm that the information provided
+                            above is accurate to the best of my knowledge.
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- BUTTONS -->
+
+            <div class="form-actions">
+
+                <button
+                    type="reset"
+                    class="clear-btn">
+                    Clear Form
+                </button>
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+                    Submit Complaint
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Smart Grievance Management System
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
