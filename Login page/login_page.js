@@ -64,7 +64,7 @@ form.addEventListener("submit", function (event) {
         return; // stay on the page and show the errors
     }
 
-    // Save or remove the User ID (never save the password)
+    // Saave or remove the User ID (never save the password)
     if (rememberBox.checked) {
         localStorage.setItem("sgms_user", userInput.value.trim());
     } else {
