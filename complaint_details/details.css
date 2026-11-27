@@ -1,3 +1,6 @@
+
+/* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +13,26 @@ body {
     color: #243b64;
 }
 
+
+/* NAVBAR */
+
 .navbar {
-    height: 70px;
+    min-height: 70px;
     background: #243b64;
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    padding: 12px 50px;
     gap: 20px;
+    flex-wrap: wrap;
+}
+
+#clock {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    min-width: 105px;
 }
 
 .logo {
@@ -30,16 +45,28 @@ body {
     font-size: 18px;
 }
 
-.back-btn {
+.back-btn,
+.navbar a {
     text-decoration: none;
     color: white;
     border: 1px solid white;
     padding: 9px 18px;
     border-radius: 6px;
+    transition: 0.3s;
+    font-size: 14px;
 }
 
+.back-btn:hover,
+.navbar a:hover {
+    background: white;
+    color: #243b64;
+}
+
+
+/* MAIN CONTAINER */
+
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 50px auto;
     padding: 0 25px;
 }
@@ -55,7 +82,11 @@ body {
 
 .page-header p {
     color: #666;
+    line-height: 1.5;
 }
+
+
+/* EMPTY COMPLAINT CARD */
 
 .empty-card {
     background: white;
@@ -89,16 +120,94 @@ body {
     text-decoration: none;
     padding: 12px 22px;
     border-radius: 7px;
+    transition: 0.3s;
 }
 
 .new-btn:hover {
     background: #1b2e50;
 }
 
+
+/* SUBMITTED COMPLAINT CARDS */
+
+.complaint-card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #243b64;
+}
+
+.complaint-card h2 {
+    font-size: 22px;
+    color: #243b64;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e8eaf0;
+}
+
+.complaint-info p,
+.complaint-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 10px 0;
+    overflow-wrap: anywhere;
+}
+
+.complaint-card strong {
+    color: #243b64;
+}
+
+
+/* STATUS BADGE */
+
+.status {
+    display: inline-block;
+    background: #fff0d5;
+    color: #a66b13;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .nav-title {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 35px auto;
+    }
+}
+
 @media (max-width: 600px) {
 
     .navbar {
-        padding: 0 20px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav-title {
@@ -107,9 +216,26 @@ body {
 
     .container {
         margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .page-header h1 {
+        font-size: 25px;
     }
 
     .empty-card {
         padding: 50px 20px;
+    }
+
+    .complaint-card {
+        padding: 20px;
+    }
+
+    .complaint-card h2 {
+        font-size: 19px;
+    }
+
+    .complaint-card p {
+        font-size: 14px;
     }
 }
